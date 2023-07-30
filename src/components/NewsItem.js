@@ -15,7 +15,7 @@ export class NewsItem extends Component {
 <div className="card-body">
 <h5 className="card-title">{title}</h5>
 <p className="card-text">{description}</p>
-<a href={newsUrl} className="btn btn-sm btn-dark">Read More News</a>
+<a href={newsUrl} style={{borderRadius:"4px"}} className="btn btn-sm btn-dark">Read More News</a>
 <p className="card-text"><small className="text-muted">Author : {!author?'Unknown':author} Dated : {new Date(date).toGMTString()}</small></p>
 {/*got the above line from the part of code of the card where there was mentioned some mins ago so also note that in above line you coould have simply put {date} but we need to get the date string and convert into say GMT time form , so first we got initial give data of date in date form using new Date(date) and then this got in date form so then converted into the GMT form also in above line if author is false that is no author mentioned for news by the api then use unknown else the name of author*/}
 </div>

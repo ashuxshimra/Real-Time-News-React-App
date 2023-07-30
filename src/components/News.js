@@ -287,6 +287,7 @@ if(this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize))//
 handlePrevCl =async ()=>{
   console.log('previous')
   // let url=`https://newsapi.org/v2/top-headlines?country={this.props.country}&category=${this.props.category}&apiKey=75d54d094ff6439382673bfbd660e9d4&page=${this.state.page-1}&pageSize=20`; //got this from newsapi business api and removed the buisness filter and also replaced the country with the in that is of india and copied and hence this is the url from which the current news will be fetched 
+//  let url='https://newsapi.org/v2/top-headlines?country=us&apiKey=75d54d094ff6439382673bfbd660e9d4
   let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=75d54d094ff6439382673bfbd660e9d4&page=${this.state.page-1}&pageSize=${this.props.pageSize}`;
 //  in above url now we are using this way for pageSize as done in above line , for props we set a specific static value and pageSize is the number of items you want in your page to appear so doing it
  this.setState({
@@ -321,7 +322,7 @@ capitalizeFirstLetter=(string)=> { //simply got this function from the stackover
 
   render() {
   return (
-  <div className='container my-3'>
+  <div style={{backgroundColor:"grey"}} className='container my-3'>
   {/* in below just typed h1.text-center and pressed entered so we got below line and so this way the text will be at the center using this bootstrap class */}
   <h1 className="text-center"style={{marginTop  : '80px',marginBottom:'15px'}}> 
   {/* marginBottom gives margin from bottom of the specific component and vice cersa as done */}

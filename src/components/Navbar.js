@@ -7,7 +7,9 @@ export class Navbar extends Component {
     return (
       <div>
    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  <Link className="navbar-brand" to="#">News-Monkey</Link>
+  <Link className="navbar-brand" to="/">
+  <img style={{width:"50px", height:"45px"}} src='https://gifdb.com/images/high/monkey-puppet-news-live-cartoon-5n5n6c3ny9x0um3c.gif' alt=''/>
+  </Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -19,7 +21,7 @@ export class Navbar extends Component {
       </li>
       {/* we are using newsapi to fetch data for news and so acc to its documentation under top headlines only you get the faclity of categiry where the news can be filtered and so the category of news are as done below in the navbar */}
       <li className="nav-item">
-        <Link className="nav-link" to="/buisness">Buisness</Link>
+        <Link className="nav-link" to="/business">Business</Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/entertainment">Entertainment </Link>

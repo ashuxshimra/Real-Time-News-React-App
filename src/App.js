@@ -41,22 +41,22 @@ this.setState({ //hence this function is used for updating the progress of loadi
           <News key='sports' setProgress={this.setProgress} pageSize={5} country='in' category='sports'/>
           </Route>
           <Route path="/entertainment">
-          <News key='entertainment' pageSize={5} country='in' category='entertainment'/>
+          <News key='entertainment' setProgress={this.setProgress} pageSize={5} country='in' category='entertainment'/>
           </Route>
           <Route path="/science">
-          <News key='science' pageSize={5} country='in' category='science'/>
+          <News key='science' setProgress={this.setProgress} pageSize={5} country='in' category='science'/>
           </Route>
-          <Route path="/buisness">
-          <News key='buisness' pageSize={5} country='in' category='buisness'/> 
+          <Route path="/business">
+          <News key='business' setProgress={this.setProgress} pageSize={5} country='in' category='business'/> 
           </Route>
           <Route path="/general">
-          <News key='general' pageSize={5} country='in' category='general'/>
+          <News key='general' setProgress={this.setProgress}  pageSize={5} country='in' category='general'/>
           </Route>
           <Route path="/health">
-          <News key='health' pageSize={5} country='in' category='health'/>
+          <News key='health' setProgress={this.setProgress} pageSize={5} country='in' category='health'/>
           </Route>
           <Route path="/technology">
-          <News key='technology' pageSize={5} country='in' category='technology'/>
+          <News key='technology' setProgress={this.setProgress} pageSize={5} country='in' category='technology'/>
           </Route>
           <Route path="/">
             {/* <Home /> */}
